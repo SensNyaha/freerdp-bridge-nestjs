@@ -1,0 +1,36 @@
+{
+  "name": "freerdp-bridge-nestjs-delivery",
+  "version": "0.2.4",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "workspaces": [
+    "package"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace @freerdp-bridge/nestjs",
+    "check:types": "tsc -p tests/tsconfig.json",
+    "test": "node --test tests/consumer.test.mjs"
+  },
+  "dependencies": {
+    "@freerdp-bridge/nestjs": "file:./package"
+  },
+  "devDependencies": {
+    "@nestjs/common": "12.2.0",
+    "@nestjs/core": "12.2.0",
+    "@nestjs/platform-express": "12.2.0",
+    "@nestjs/platform-fastify": "12.2.0",
+    "reflect-metadata": "0.2.2",
+    "rxjs": "7.8.2",
+    "ws": "8.22.0",
+    "typescript": "5.9.3",
+    "@types/node": "24.10.0"
+  },
+  "optionalDependencies": {
+    "@freerdp-bridge/runtime-win32-x64": "0.2.4",
+    "@freerdp-bridge/runtime-linux-x64-gnu": "0.2.4"
+  }
+}
