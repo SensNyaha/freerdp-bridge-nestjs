@@ -3,7 +3,7 @@
 Implements the user's next adapter request in `feature/nestjs-0.2.2`, using
 SPECIFICATION §2.1/2.11/3.1/3.2, ADR-001 and the accepted Fastify session/media
 engine. The implementation and aligned 0.2.2 release checks are accepted through
-separate feature/release branches. [Final release evidence](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.2.5/docs/ITERATION_429.md).
+separate feature/release branches. [Final release evidence](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.3.0/docs/ITERATION_429.md).
 Registry publication is a separate pending step. The immutable published 0.2.1
 set is unchanged.
 
@@ -97,9 +97,9 @@ pass through both Express and FastifyAdapter with H.264 and JPEG: nonuniform
 1920x1080 rendering, 1280x720 resize, restoration, fresh-token reattachment,
 same-port host HTTP, bounded diagnostics and joined cleanup. Native runtime is
 the unchanged accepted 0.2.1 package; this is development adapter acceptance,
-not an aligned 0.2.2 release. [Evidence and retained setup failures](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.2.5/docs/ITERATION_427.md).
+not an aligned 0.2.2 release. [Evidence and retained setup failures](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.3.0/docs/history/iterations/401-450.md#iteration-427).
 
 Feature acceptance does not imply new devices, sound quality, platform families
 or complete V1. Subsequent aligned native/JS 0.2.2 archives and all eight
-versioned RDP profiles pass; [release acceptance](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.2.5/docs/ITERATION_429.md). npm 0.2.2
+versioned RDP profiles pass; [release acceptance](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.3.0/docs/ITERATION_429.md). npm 0.2.2
 publication remains separate required work.
