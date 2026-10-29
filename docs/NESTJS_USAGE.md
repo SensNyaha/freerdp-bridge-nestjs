@@ -2,16 +2,16 @@
 
 В 0.5.0 доступен отдельно включаемый буфер изображений. Именованные PNG-профили,
 явные действия браузера, общие лимиты и ограничения описаны в
-[image clipboard](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/docs/CLIPBOARD_BROWSER.md#versioned-050-image-application-acceptance).
+[image clipboard](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/docs/CLIPBOARD_BROWSER.md#versioned-050-image-application-acceptance).
 
 Модуль принят в **0.2.2**, после отдельных feature/release branches,
 внешних npm consumers и реальных Astra/RED OS проверок обоих host adapter.
-[Контракт](NESTJS_PLUGIN.md), [release-приёмка](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/docs/ITERATION_429.md).
+[Контракт](NESTJS_PLUGIN.md), [release-приёмка](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/docs/ITERATION_429.md).
 Все восемь npm-пакетов 0.2.2 опубликованы; точный integrity и свежие Windows/Linux
 registry-only consumers проходят strict TS и 15/15 проверок на каждой ОС.
-[Публикация 0.2.2](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/docs/history/iterations/401-450.md#iteration-437). Текущий согласованный набор **0.5.0**
+[Публикация 0.2.2](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/docs/history/iterations/401-450.md#iteration-437). Текущий согласованный набор **0.5.0**
 также полностью опубликован; обе ОС проходят strict TS и 15/15.
-[Публикация 0.5.0](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/docs/RELEASE_0_5_0.md#public-delivery). Историческая 0.2.1 содержит только Fastify.
+[Публикация 0.5.0](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/docs/RELEASE_0_5_0.md#public-delivery). Историческая 0.2.1 содержит только Fastify.
 
 ## Зависимости и размещение worker
 
@@ -228,7 +228,7 @@ window.bridgeViewer.attach(createdSession, {
 не подтверждает отрисованный desktop. `bridgeViewer.detach()` закрывает viewer;
 удаление серверной сессии выполняется отдельным authenticated DELETE либо
 штатным shutdown. Presentation, credential-entry UI и browser permission policy
-остаются у приложения. [Подробности browser flow](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/docs/FASTIFY_USAGE.md).
+остаются у приложения. [Подробности browser flow](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/docs/FASTIFY_USAGE.md).
 
 Authenticated `/rdp/v1/diagnostics` и `bridge.diagnostics()` содержат ограниченные
 счётчики lifecycle без hostnames/credentials/remote contents. Control-channel
@@ -266,8 +266,8 @@ joined cleanup и не завершайте Node через немедленны
 отказ сертификата, чужой identity, host HTTP/WS, reattach и исчезновение workers.
 
 Framework/fake-media/native-TLS проверки, external npm tarball consumers и
-actual Astra/RED OS desktop учитываются отдельно; [приёмка](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/docs/history/iterations/401-450.md#iteration-427).
-Versioned 0.2.2 release gates проходят в [429](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/docs/ITERATION_429.md); npm publication
+actual Astra/RED OS desktop учитываются отдельно; [приёмка](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/docs/history/iterations/401-450.md#iteration-427).
+Versioned 0.2.2 release gates проходят в [429](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/docs/ITERATION_429.md); npm publication
 остаётся отдельным следующим блоком. Полная
 V1-программа и незавершённые device/installers requirements сохраняются.
 
